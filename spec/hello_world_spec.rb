@@ -15,5 +15,13 @@ describe HelloWorld do
 		expect(@helloworld.saying).to eq ("Hello World")
 	end
 
-	
+	it "should return a string" do
+		expect(@helloworld.saying.class).to eq(String)
+	end
+
+	it "should return a string between 1 and 12 characters" do
+		expect(@helloworld.saying.length).to be < 12
+	end
+
+
 end
